@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ic_launcher_background">
+
+
+      <ImageView
+          android:id="@+id/imageView8"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/imageView9"
+          android:layout_marginBottom="-8dp"
+          android:scaleType="fitXY"
+          app:srcCompat="@drawable/mainscreenpic" />
+
+      <ImageView
+          android:id="@+id/imageView9"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:foregroundGravity="top|center"
+          app:srcCompat="@drawable/gradient" />
+
+      <FrameLayout
+          android:layout_width="128dp"
+          android:layout_height="44dp"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="292dp"
+          android:background="@drawable/buttonred">
+
+        <TextView
+            android:id="@+id/watch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/watch"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+      </FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto_bold"
+
+
+        android:text="@string/intrends"
+
+        android:textColor="@color/btcol"
+        android:textSize="24dp" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+      </LinearLayout>
+    </ScrollView>
+
+  </LinearLayout>
+
+
+</ScrollView>
